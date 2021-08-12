@@ -9,15 +9,18 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct AppState: Equatable {
+struct AppState: Equatable
+{
     var userData = UserData()
     var routing = ViewRouting()
     var system = System()
     var permissions = Permissions()
 }
 
-extension AppState {
-    struct UserData: Equatable {
+extension AppState
+{
+    struct UserData: Equatable
+    {
         /*
          The list of countries (Loadable<[Country]>) used to be stored here.
          It was removed for performing countries' search by name inside a database,
@@ -26,9 +29,11 @@ extension AppState {
          */
     }
 }
-
-extension AppState {
-    struct ViewRouting: Equatable {
+ 
+extension AppState
+{
+    struct ViewRouting: Equatable
+    {
         var countriesList = CountriesList.Routing()
         var countryDetails = CountryDetails.Routing()
     }
@@ -41,12 +46,15 @@ extension AppState {
     }
 }
 
-extension AppState {
-    struct Permissions: Equatable {
+extension AppState
+{
+    struct Permissions: Equatable
+    {
         var push: Permission.Status = .unknown
     }
     
-    static func permissionKeyPath(for permission: Permission) -> WritableKeyPath<AppState, Permission.Status> {
+    static func permissionKeyPath(for permission: Permission) -> WritableKeyPath<AppState, Permission.Status>
+    {
         let pathToPermissions = \AppState.permissions
         switch permission {
         case .pushNotifications:
@@ -55,7 +63,8 @@ extension AppState {
     }
 }
 
-func == (lhs: AppState, rhs: AppState) -> Bool {
+func == (lhs: AppState, rhs: AppState) -> Bool
+{
     return lhs.userData == rhs.userData &&
         lhs.routing == rhs.routing &&
         lhs.system == rhs.system &&
@@ -63,8 +72,10 @@ func == (lhs: AppState, rhs: AppState) -> Bool {
 }
 
 #if DEBUG
-extension AppState {
-    static var preview: AppState {
+extension AppState
+{
+    static var preview: AppState
+    {
         var state = AppState()
         state.system.isActive = true
         return state
