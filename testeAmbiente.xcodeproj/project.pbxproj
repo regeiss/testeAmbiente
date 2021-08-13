@@ -15,6 +15,7 @@
 		E155008126C1FC5200A8D389 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E155008026C1FC5200A8D389 /* APICall.swift */; };
 		E1F236A726C5E60F00A86BB7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236A626C5E60F00A86BB7 /* AppState.swift */; };
 		E1F236AA26C5EA3700A86BB7 /* UserPermissionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236A926C5EA3700A86BB7 /* UserPermissionsInteractor.swift */; };
+		E1F236AD26C6D2A600A86BB7 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E155008026C1FC5200A8D389 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		E1F236A626C5E60F00A86BB7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E1F236A926C5EA3700A86BB7 /* UserPermissionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsInteractor.swift; sourceTree = "<group>"; };
+		E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		E155006F26C173EB00A8D389 /* testeAmbiente */ = {
 			isa = PBXGroup;
 			children = (
+				E1F236AB26C6D28600A86BB7 /* System */,
 				E1F236A826C5E9B900A86BB7 /* Interactors */,
 				E1F236A526C5E3C800A86BB7 /* Utilities */,
 				E1F236A426C5E3A900A86BB7 /* Injected */,
@@ -101,6 +104,14 @@
 				E1F236A926C5EA3700A86BB7 /* UserPermissionsInteractor.swift */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E1F236AB26C6D28600A86BB7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F236AD26C6D2A600A86BB7 /* AppEnvironment.swift in Sources */,
 				E155007326C173EB00A8D389 /* ContentView.swift in Sources */,
 				E1F236A726C5E60F00A86BB7 /* AppState.swift in Sources */,
 				E1F236AA26C5EA3700A86BB7 /* UserPermissionsInteractor.swift in Sources */,
