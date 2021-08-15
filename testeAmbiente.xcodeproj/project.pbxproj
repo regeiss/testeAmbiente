@@ -16,6 +16,10 @@
 		E1F236A726C5E60F00A86BB7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236A626C5E60F00A86BB7 /* AppState.swift */; };
 		E1F236AA26C5EA3700A86BB7 /* UserPermissionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236A926C5EA3700A86BB7 /* UserPermissionsInteractor.swift */; };
 		E1F236AD26C6D2A600A86BB7 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */; };
+		E1F236AF26C6E99900A86BB7 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236AE26C6E99900A86BB7 /* SystemEventsHandler.swift */; };
+		E1F236B326C9D63000A86BB7 /* CountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236B226C9D63000A86BB7 /* CountriesList.swift */; };
+		E1F236B526C9D64200A86BB7 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236B426C9D64200A86BB7 /* CountryDetails.swift */; };
+		E1F236B826C9DA0C00A86BB7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F236B726C9DA0C00A86BB7 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		E1F236A626C5E60F00A86BB7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E1F236A926C5EA3700A86BB7 /* UserPermissionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsInteractor.swift; sourceTree = "<group>"; };
 		E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		E1F236AE26C6E99900A86BB7 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
+		E1F236B226C9D63000A86BB7 /* CountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesList.swift; sourceTree = "<group>"; };
+		E1F236B426C9D64200A86BB7 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		E1F236B726C9DA0C00A86BB7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,8 @@
 		E155006F26C173EB00A8D389 /* testeAmbiente */ = {
 			isa = PBXGroup;
 			children = (
+				E1F236B626C9D9CD00A86BB7 /* Models */,
+				E1F236B026C9D5DD00A86BB7 /* UI */,
 				E1F236AB26C6D28600A86BB7 /* System */,
 				E1F236A826C5E9B900A86BB7 /* Interactors */,
 				E1F236A526C5E3C800A86BB7 /* Utilities */,
@@ -110,8 +120,34 @@
 			isa = PBXGroup;
 			children = (
 				E1F236AC26C6D2A600A86BB7 /* AppEnvironment.swift */,
+				E1F236AE26C6E99900A86BB7 /* SystemEventsHandler.swift */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		E1F236B026C9D5DD00A86BB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E1F236B126C9D5E500A86BB7 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1F236B126C9D5E500A86BB7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E1F236B226C9D63000A86BB7 /* CountriesList.swift */,
+				E1F236B426C9D64200A86BB7 /* CountryDetails.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E1F236B626C9D9CD00A86BB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1F236B726C9DA0C00A86BB7 /* Models.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F236B826C9DA0C00A86BB7 /* Models.swift in Sources */,
 				E1F236AD26C6D2A600A86BB7 /* AppEnvironment.swift in Sources */,
+				E1F236B526C9D64200A86BB7 /* CountryDetails.swift in Sources */,
 				E155007326C173EB00A8D389 /* ContentView.swift in Sources */,
+				E1F236B326C9D63000A86BB7 /* CountriesList.swift in Sources */,
 				E1F236A726C5E60F00A86BB7 /* AppState.swift in Sources */,
 				E1F236AA26C5EA3700A86BB7 /* UserPermissionsInteractor.swift in Sources */,
+				E1F236AF26C6E99900A86BB7 /* SystemEventsHandler.swift in Sources */,
 				E155007F26C19EB000A8D389 /* DIContainer.swift in Sources */,
 				E155008126C1FC5200A8D389 /* APICall.swift in Sources */,
 				E155007126C173EB00A8D389 /* testeAmbienteApp.swift in Sources */,
