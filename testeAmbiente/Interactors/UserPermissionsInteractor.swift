@@ -8,12 +8,12 @@
 import Foundation
 import UserNotifications
 
-enum Permissions
+enum Permission
 {
     case pushNotifications
 }
 
-extension Permissions
+extension Permission
 {
     enum Status: Equatable
     {

@@ -13,6 +13,15 @@ struct CountryDetails: View {
     }
 }
 
+// MARK: - Routing
+
+extension CountryDetails
+{
+    struct Routing: Equatable
+    {
+        var detailsSheet: Bool = false
+    }
+}
 struct CountriesDetail_Previews: PreviewProvider {
     static var previews: some View {
         CountryDetails()

@@ -20,7 +20,7 @@ extension CountriesList
 {
     struct Routing: Equatable
     {
-        var countryDetails: String
+        var countryDetails: Country.Code?
     }
 }
 struct CountriesList_Previews: PreviewProvider {

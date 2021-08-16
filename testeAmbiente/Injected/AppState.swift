@@ -39,8 +39,10 @@ extension AppState
     }
 }
 
-extension AppState {
-    struct System: Equatable {
+extension AppState
+{
+    struct System: Equatable
+    {
         var isActive: Bool = false
         var keyboardHeight: CGFloat = 0
     }
@@ -50,6 +52,11 @@ extension AppState
 {
     struct Permissions: Equatable
     {
+        static func == (lhs: AppState.Permissions, rhs: AppState.Permissions) -> Bool
+        {
+            return true // precisa ser ajustado 
+        }
+        
         var push: Permission.Status = .unknown
     }
     
